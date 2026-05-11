@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17
+FROM openjdk:11
 
 WORKDIR /app
 
@@ -10,4 +10,4 @@ RUN mvn clean package -DskipTests
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "target/*.jar"]
+CMD ["java","-jar","target/bookStore-0.0.1-SNAPSHOT.jar"]
